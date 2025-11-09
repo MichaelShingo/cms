@@ -32,7 +32,7 @@ export default function RootLayout({
     >
       <body className={` antialiased`}>
         <NextTopLoader showSpinner={false} height={6} color="#000000" />
-        <main className="min-h-screen">
+        <main className="min-h-screen light text-foreground bg-background">
           <Providers>{children}</Providers>
         </main>
       </body>

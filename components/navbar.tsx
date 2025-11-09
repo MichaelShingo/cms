@@ -17,9 +17,27 @@ export default function Navbar() {
           <div className="flex items-center gap-6">
             <Logo />
           </div>
-          <Button variant="light">Hello</Button>
-          <Button variant="faded">Hello</Button>
-          <Button variant="bordered">Hello</Button>
+          <Button color="primary" variant="light">
+            Hello
+          </Button>
+          <Button color="primary" variant="faded">
+            Hello
+          </Button>
+          <Button color="primary" variant="bordered">
+            Hello
+          </Button>
+          <Button color="primary" variant="flat">
+            Hello
+          </Button>
+          <Button color="primary" variant="ghost">
+            Hello
+          </Button>
+          <Button color="primary" variant="light">
+            Hello
+          </Button>
+          <Button color="primary" variant="solid">
+            Hello
+          </Button>
           <div className="flex items-center gap-2">
             {user ? (
               <>
