@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import { Noto_Sans_KR } from "next/font/google";
 import "./globals.css";
 import NextTopLoader from "nextjs-toploader";
-import { Toaster } from "@/components/ui/sonner";
 import { Providers } from "./providers";
 
 const notoSansKR = Noto_Sans_KR({
@@ -28,12 +27,11 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${notoSansKR.variable}`}
+      className={`${notoSansKR.variable} light`}
       suppressHydrationWarning
     >
       <body className={` antialiased`}>
         <NextTopLoader showSpinner={false} height={6} color="#000000" />
-        <Toaster richColors position="top-right" />
         <main className="min-h-screen">
           <Providers>{children}</Providers>
         </main>

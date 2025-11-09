@@ -2,9 +2,8 @@
 
 import { Bell, Search } from "lucide-react";
 
-import { SidebarTrigger } from "@/components/ui/sidebar";
 import type { User } from "@/lib/types";
-import { Separator } from "./ui/separator";
+import { Divider } from "@heroui/divider";
 import { Button } from "@heroui/react";
 
 type UserProps = {
@@ -14,8 +13,7 @@ type UserProps = {
 export default function AppHeader({ user }: UserProps) {
   return (
     <header className="sticky top-0 z-30 flex h-16 items-center gap-4 border-b px-6">
-      <SidebarTrigger />
-      <Separator
+      <Divider
         orientation="vertical"
         className="mx-2 data-[orientation=vertical]:h-4"
       />

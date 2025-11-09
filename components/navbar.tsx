@@ -17,7 +17,9 @@ export default function Navbar() {
           <div className="flex items-center gap-6">
             <Logo />
           </div>
-          <Button>Hello</Button>
+          <Button variant="light">Hello</Button>
+          <Button variant="faded">Hello</Button>
+          <Button variant="bordered">Hello</Button>
           <div className="flex items-center gap-2">
             {user ? (
               <>
@@ -25,7 +27,7 @@ export default function Navbar() {
                   href="/dashboard"
                   className="text-sm font-medium text-muted-foreground transition-colors hover:text-foreground"
                 >
-                  <Button variant="outline">Dashboard</Button>
+                  <Button variant="bordered">Dashboard</Button>
                 </Link>
                 <SignOutForm />
               </>
@@ -35,9 +37,9 @@ export default function Navbar() {
                   href="/sign-in"
                   className="text-sm font-medium text-muted-foreground transition-colors hover:text-foreground"
                 >
-                  <Button variant="outline">Login</Button>
+                  <Button variant="bordered">Login</Button>
                 </Link>
-                <Button asChild>
+                <Button>
                   <Link href="/sign-up">Sign up</Link>
                 </Button>
               </>
